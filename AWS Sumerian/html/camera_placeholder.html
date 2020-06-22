@@ -1,0 +1,129 @@
+
+    <style>
+        div.select {
+            display: none;
+            margin: 0 0 1em 0;
+        }
+		div.select2 {
+            display: inline-block;
+            
+        }
+		div.container {
+            z-index: 900;
+        }
+
+        p.small {
+            font-size: 0.7em;
+        }
+
+        label {
+            width: 12em;
+            display: inline-block;
+        }
+		div.ex2 {
+		  max-width:500px;
+		  margin: auto;
+		  border: 3px solid #73AD21;
+		}
+		.center {
+		  margin: auto;
+		  width: 60%;
+		  border: 3px solid #73AD21;
+		  padding: 10px;
+		}
+		.blue-square-container {
+			margin-top: 25px;
+  text-align: center;
+			
+overflow:"visible"
+}
+		
+		
+	.output-container {
+		 z-index: 1000;
+		position: relative;
+		font-family: Helvetica;
+		color: #202020;
+		font-weight: 400;
+		font-size: 18px;
+		width: 100vw;
+		height: 70vh;
+		display: flex;
+		//flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		
+		/* Disable pointer events for this element so it doesn't block 
+		 * scene clicks. */
+		pointer-events: none;
+	}
+	.output-prompt {
+		font-weight: 400;
+		font-size: 12px;
+		text-align: center;
+		padding: 16px 27px;
+		max-width: 40%;
+		background-color: rgba(235, 235, 235, 0.5);
+		border-radius: 30px;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+	}
+    </style>
+
+<div id="container">
+	<img id='imgout' hidden src="https://www.google.com/search?q=image&rlz=1C1GCEB_enIN852IN852&sxsrf=ALeKk017apx56XYncrv60oHWUhyBQPJwHA:1591552302388&tbm=isch&source=iu&ictx=1&fir=nH5liarSz56duM%253A%252C0JWe7yDOKrVFAM%252C%252Fm%252F0jg24&vet=1&usg=AI4_-kTiL00V_BWTlHzuxiBkjLA0Z2cZKQ&sa=X&ved=2ahUKEwjD-v-sovDpAhXJILcAHf9eDMMQ_B0wFHoECA4QAw#imgrc=nH5liarSz56duM:">
+
+    
+
+    <div class="select">
+        <label for="audioSource">Audio input source: </label><select id="audioSource"></select>
+    </div >
+
+    <div class="select">
+        <label for="audioOutput">Audio output destination: </label><select id="audioOutput"></select>
+    </div>
+
+   <div class="blue-square-container">
+        <select id="videoSource" class="center"></select>
+    </div>
+	
+	<div id="container">
+	
+
+    <video class="blue-square-container" id="video" playsinline autoplay></video>
+
+    
+</div>
+
+
+<div id="capture" hidden style="padding: 10px; background: #f5da55">
+    <h4 style="color: #000; ">Hello world!</h4>
+	<button id="screenshot">hahah</button>
+</div>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="js/main.js" async></script>
+
+<script src="../../../js/lib/ga.js"></script>
+<script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+<script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+<script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+<script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+<script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+<script type="text/javascript" src="lib/url-template/url-template.js"></script>
+<script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+<script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+<script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+<script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+<script type="text/javascript" src="apigClient.js"></script>
+
+<style>
+	/*
+	 * Place your styles here. Beware that CSS styles affect all
+	 * HTML elements in the page so you need to provide appropriate
+	 * classes or IDs to identify the elements being styled.
+	 */
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-alpha1/html2canvas.js">
+</script>

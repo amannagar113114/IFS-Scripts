@@ -1,0 +1,9 @@
+  "INFO: Downloading Sumerian format scene....",
+  "INFO: Converting to glTF format....",
+  "INFO: Using glTF extension KHR_lights_punctual",
+  "INFO: Using glTF extension KHR_lights_punctual for object 'Key - Directional'",
+  "INFO: Using glTF extension KHR_lights_punctual for object 'Rim - Directional'",
+  "INFO: Converting classic material \"Circle Material\" (d18ada494a9d4d5ea3da1f58ba4c6f06.material) to its PBR representation.",
+  "ERROR: An unexpected error occurred when processing material \"Circle Material\" (d18ada494a9d4d5ea3da1f58ba4c6f06.material):TypeError: Cannot read property 'baseColorFactor' of undefined",
+  "INFO: Using glTF extension EXT_lights_image_based",
+  "INFO: Using glTF extension EXT_lights_image_based for object 'IFS'"

@@ -1,0 +1,401 @@
+{
+  "asset": {
+    "generator": "Amazon Sumerian",
+    "version": "2.0"
+  },
+  "cameras": [
+    {
+      "name": "Default Camera",
+      "type": "perspective",
+      "perspective": {
+        "aspectRatio": 1,
+        "yfov": 0.7853981633974483,
+        "zfar": 1000,
+        "znear": 1
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Default Camera",
+      "camera": 0,
+      "rotation": [
+        -0.12703630988820747,
+        0.6943956314536842,
+        0.12658189271851014,
+        0.6968884469008121
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "translation": [
+        23.519723851034794,
+        8.869648381697928,
+        0.08428259916586013
+      ]
+    },
+    {
+      "name": "Key - Directional",
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      },
+      "rotation": [
+        -0.0948595598902012,
+        0.11955889871169392,
+        -0.14019607206387738,
+        0.9782905473396666
+      ],
+      "scale": [
+        0.9999998569971704,
+        0.9999998569971704,
+        0.9999998569971704
+      ],
+      "translation": [
+        3.840765953063965,
+        5.725151062011719,
+        6.723899841308594
+      ]
+    },
+    {
+      "name": "Rim - Directional",
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 1
+        }
+      },
+      "rotation": [
+        -0.007935453473895075,
+        0.936498758480699,
+        0.34801447925863915,
+        0.042344139719820297
+      ],
+      "scale": [
+        1.0000002646568553,
+        1.0000002646568553,
+        1.0000002646568553
+      ],
+      "translation": [
+        4.528846740722656,
+        9.009954452514648,
+        -9.487277030944824
+      ]
+    },
+    {
+      "name": "Default  Dynamic Lights",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "children": [
+        1,
+        2
+      ]
+    }
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Key - Directional",
+          "color": [
+            0.92477783203125,
+            0.8875688601181507,
+            0.856960791015625
+          ],
+          "intensity": 1,
+          "type": "directional"
+        },
+        {
+          "name": "Rim - Directional",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "intensity": 1,
+          "type": "directional"
+        }
+      ]
+    },
+    "EXT_lights_image_based": {
+      "lights": [
+        {
+          "name": "Default Image Based Lighting",
+          "intensity": 0.555,
+          "rotation": [
+            0,
+            0.9945218953682733,
+            0,
+            -0.10452846326765355
+          ],
+          "specularImageSize": 256,
+          "specularImages": [
+            [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            [
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ]
+          ],
+          "irradianceCoefficients": [
+            [
+              6.767630100250244,
+              7.795283317565918,
+              8.821764945983887
+            ],
+            [
+              -5.275145530700684,
+              -6.101497650146484,
+              -7.0443243980407715
+            ],
+            [
+              3.720926523208618,
+              4.367361068725586,
+              5.267691612243652
+            ],
+            [
+              -0.19024516642093658,
+              -0.18511231243610382,
+              -0.08477390557527542
+            ],
+            [
+              -1.4997949600219727,
+              -1.741493582725525,
+              -2.011887311935425
+            ],
+            [
+              -8.791146278381348,
+              -10.176470756530762,
+              -11.742107391357422
+            ],
+            [
+              5.856884956359863,
+              6.700819492340088,
+              7.478518962860107
+            ],
+            [
+              4.25042200088501,
+              4.859609127044678,
+              5.36187219619751
+            ],
+            [
+              -3.5116093158721924,
+              -4.09002161026001,
+              -4.778421878814697
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "extensionsUsed": [
+    "KHR_lights_punctual",
+    "EXT_lights_image_based"
+  ],
+  "scenes": [
+    {
+      "name": "IFS",
+      "nodes": [
+        0,
+        3
+      ],
+      "extensions": {
+        "EXT_lights_image_based": {
+          "light": 0
+        }
+      }
+    }
+  ],
+  "scene": 0,
+  "images": [
+    {
+      "uri": "HDRI_Haven_DefaultStudio.jpg"
+    },
+    {
+      "uri": "default_studio_skysphere.jpg"
+    },
+    {
+      "uri": "default_studio_HDRI-1.hdr"
+    },
+    {
+      "uri": "SpecularMip_Level0_FaceIdx0.png"
+    },
+    {
+      "uri": "SpecularMip_Level0_FaceIdx1.png"
+    },
+    {
+      "uri": "SpecularMip_Level0_FaceIdx2.png"
+    },
+    {
+      "uri": "SpecularMip_Level0_FaceIdx3.png"
+    },
+    {
+      "uri": "SpecularMip_Level0_FaceIdx4.png"
+    },
+    {
+      "uri": "SpecularMip_Level0_FaceIdx5.png"
+    },
+    {
+      "uri": "SpecularMip_Level1_FaceIdx0.png"
+    },
+    {
+      "uri": "SpecularMip_Level1_FaceIdx1.png"
+    },
+    {
+      "uri": "SpecularMip_Level1_FaceIdx2.png"
+    },
+    {
+      "uri": "SpecularMip_Level1_FaceIdx3.png"
+    },
+    {
+      "uri": "SpecularMip_Level1_FaceIdx4.png"
+    },
+    {
+      "uri": "SpecularMip_Level1_FaceIdx5.png"
+    },
+    {
+      "uri": "SpecularMip_Level2_FaceIdx0.png"
+    },
+    {
+      "uri": "SpecularMip_Level2_FaceIdx1.png"
+    },
+    {
+      "uri": "SpecularMip_Level2_FaceIdx2.png"
+    },
+    {
+      "uri": "SpecularMip_Level2_FaceIdx3.png"
+    },
+    {
+      "uri": "SpecularMip_Level2_FaceIdx4.png"
+    },
+    {
+      "uri": "SpecularMip_Level2_FaceIdx5.png"
+    },
+    {
+      "uri": "SpecularMip_Level3_FaceIdx0.png"
+    },
+    {
+      "uri": "SpecularMip_Level3_FaceIdx1.png"
+    },
+    {
+      "uri": "SpecularMip_Level3_FaceIdx2.png"
+    },
+    {
+      "uri": "SpecularMip_Level3_FaceIdx3.png"
+    },
+    {
+      "uri": "SpecularMip_Level3_FaceIdx4.png"
+    },
+    {
+      "uri": "SpecularMip_Level3_FaceIdx5.png"
+    },
+    {
+      "uri": "SpecularMip_Level4_FaceIdx0.png"
+    },
+    {
+      "uri": "SpecularMip_Level4_FaceIdx1.png"
+    },
+    {
+      "uri": "SpecularMip_Level4_FaceIdx2.png"
+    },
+    {
+      "uri": "SpecularMip_Level4_FaceIdx3.png"
+    },
+    {
+      "uri": "SpecularMip_Level4_FaceIdx4.png"
+    },
+    {
+      "uri": "SpecularMip_Level4_FaceIdx5.png"
+    }
+  ],
+  "samplers": [
+    {
+      "name": "HDRI_Haven_DefaultStudio.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "default_studio_skysphere.jpg",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "name": "default_studio_HDRI.hdr",
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "textures": [
+    {
+      "name": "HDRI_Haven_DefaultStudio.jpg",
+      "source": 0,
+      "sampler": 0
+    },
+    {
+      "name": "default_studio_skysphere.jpg",
+      "source": 1,
+      "sampler": 1
+    },
+    {
+      "name": "default_studio_HDRI.hdr",
+      "source": 2,
+      "sampler": 2
+    }
+  ]
+}

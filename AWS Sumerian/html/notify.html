@@ -1,0 +1,51 @@
+<style>
+	/*
+	 * Place your styles here. Beware that CSS styles affect all
+	 * HTML elements in the page so you need to provide appropriate
+	 * classes or IDs to identify the elements being styled.
+	 */
+
+	.output-container {
+		 z-index: 1000;
+		position: relative;
+		font-family: Helvetica;
+		color: #202020;
+		font-weight: 400;
+		font-size: 18px;
+		width: 100vw;
+		height: 70vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		
+		/* Disable pointer events for this element so it doesn't block 
+		 * scene clicks. */
+		pointer-events: none;
+	}
+	.output-prompt {
+		font-weight: 400;
+		font-size: 12px;
+		text-align: center;
+		padding: 6px 10px;
+		max-width: 80%;
+		background-color: rgba(235, 235, 235, 0.5);
+		border-radius: 30px;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+	}
+</style>
+<div class="output-container">
+<p class="output-prompt" id="dynamo_output" style="font-weight: bold;">
+	
+	
+</p><p class="output-prompt" id="description">
+	
+	
+</p><p class="output-prompt" id="treatment">
+	
+</p></div>
+
+<!-- Note:
+ + It is not recommended to use <script> tags directly. Consider using the Script Component instead.
+-->
